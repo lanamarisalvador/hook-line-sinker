@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Hook, Line, & Sinker",
+    "version": "1.0",
+    "description": "An AI-powered phishing detector built for checking emails.",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+    {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js"]
+    }
+    ]
+}
